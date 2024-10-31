@@ -13,7 +13,7 @@ export default {
         'Favorite': '#FF5841'
       },
       backgroundImage: {
-        'hero-pattern': "url('assets/blue2.jpeg')",
+        'hero-pattern': "url('assets/glo.jpeg')",
         'footer-texture': "url('assets/blue1.jpeg')",
       }
     },

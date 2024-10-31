@@ -47,7 +47,7 @@ const topsale = () => {
         </div>
     </div>
     <div className='py-10'>
-    <h1 className='text-3xl font-semibold mb-6 bg-[#911111] rounded-e-full border-l-2'>Data</h1>
+    <h1 className='text-3xl font-semibold mb-6 bg-[#911111] rounded-e-full border-l-2'>Data service</h1>
     {/*cartegory filtering */}
     <div>
         <select 
@@ -62,6 +62,7 @@ const topsale = () => {
         </select>
         
     </div>
+    <img src="glo.jpeg" alt="" />
 </div>
 </div>
   )
