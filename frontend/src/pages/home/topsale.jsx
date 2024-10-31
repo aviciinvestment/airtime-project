@@ -63,6 +63,7 @@ const topsale = () => {
         
     </div>
     <img src="glo.jpeg" alt="" />
+    <img src="airtel.jpeg" alt="" />
 </div>
 </div>
   )
