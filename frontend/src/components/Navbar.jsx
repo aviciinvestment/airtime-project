@@ -8,23 +8,7 @@ import { IoIosChatbubbles } from "react-icons/io";
 import { FaSignOutAlt } from "react-icons/fa";
 import avatarImg from "../assets/user.png";
 
-import { useState } from 'react';
-
-const navigation = [
-    {name: "All Records", href: "/transactions"},
-    {name: "Dashbord", href: "/dashboard"},
-    {name: "Settings", href: "/settings"},
-    {name: "Contact", href: "/contact"},
-    {name: "About", href: "/about"},
-    
-];
-
-const chat = () => {document.getElementById('guide').innerHTML = 'for inquiries chat with our Ai assistant'};
-
 const Navbar = () => {
-
-const [isDropdownOpen, setIsDropdownOpen] = useState(false)
-
 const currentUser = true;
 const notification = true;
 
@@ -50,8 +34,7 @@ return (
                 </Link>
                 <div>
                     <Link to = "/">
-                        <IoIosChatbubbles onMouseEnter={chat} className='size-8'/> <br />
-                        <div><p id='guide'></p></div>
+                        <IoIosChatbubbles className='size-8'/> 
                     </Link>
                 </div>
                 <div className='flex'>
@@ -68,32 +51,8 @@ return (
                 <div>
                     {
                         currentUser ? <>
-                        <button onClick={() => setIsDropdownOpen(!isDropdownOpen)}>
-                            <img src={avatarImg} alt="user" className={`size-10 rounded-full $
-                                {currentUser ? ' ring-2 ring-blue-500 rounded-full': ' '} `}/>
-                        </button> {/*show dropdowns*/}
-                        {
-                            isDropdownOpen && (
-                                <div className=' absolute right-0 mt-2 w-48 bg-white 
-                                shadow-lg rounded-md z-40'>
-                                    <ul className=' py-2 '>
-                                        {
-                                            navigation.map((item) =>(
-                                                <li key ={item.name} onClick={() => 
-                                                    setIsDropdownOpen(false)
-                                                }>
-                                                    <Link to={item.href} className=' block  
-                                                    px-4 py-2 text-sm hover:bg-gray-100 '>
-                                                        {item.name}
-                                                    </Link>
-                                                </li>
-                                            ))
-                                        }
-                                    </ul>
-                                </div>
-                            )
-                        }
-                         </>
+                            <img src={avatarImg} alt="" className ="size-10 rounded-full " />
+                             </>
                             :<Link to = "/login">
                                 <FaRegUserCircle className='size-8 '/>
                             </Link>

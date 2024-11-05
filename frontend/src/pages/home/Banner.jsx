@@ -1,7 +1,7 @@
 import React from 'react'
 import { RiBarChartHorizontalFill } from "react-icons/ri";
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+
 
 
 const Banner = () => {
