@@ -1,22 +1,29 @@
 import React from 'react'
 import { RiBarChartHorizontalFill } from "react-icons/ri";
 import { Link } from 'react-router-dom';
+import { TbPlayerTrackNextFilled } from "react-icons/tb";
+import { TbPlayerTrackPrevFilled } from "react-icons/tb";
 
+var list = ['hero-pattern','more-pattern']
+function change(){
+  for(var i = 0;i < list.length;i++)
+  return list[i];
 
+}
 
 const Banner = () => {
   return (
 
-        <div className=' text-white cursor-pointer bg-footer-texture bg-cover rounded-2xl  
-          right-0 w-3/4 h-1/2 shadow-blue-950 shadow-2xl ml-[26%]'>
-            <Link className='float-right '><RiBarChartHorizontalFill className='size-12 mt-8 mr-4'/></Link>
-            <div className='font-bold text-center py-20 lg:py-2
-           items-center'>
-                <h1 className=' font-serif text-[50px] sm:text-[40px] md:text-[80px] lg:text-[100px] '>BUY NOW</h1>
-                <p className='text-[30px] sm:text-[50px] md:text-[50px] lg:text-[80px] '>AIRTIME & DATA</p>
+    
+            <div id='FULLCLASS' className='cursor-pointer bg-footer-texture  bg-cover w-fit flex text-white rounded-3xl'>
+              <TbPlayerTrackPrevFilled className='text-blue-900 bg-white size-16'/>
+              <div className=' text-center p-32 lg:p-56'>
+                <h1 className=' font-serif text-9xl'>BUY NOW</h1>
+                <p className='text-6xl'>AIRTIME & DATA</p>
+              </div>
+                <Link ><TbPlayerTrackNextFilled className='text-blue-900 bg-white size-16' /> </Link >
             </div>
 
-        </div>
   )
 }
 

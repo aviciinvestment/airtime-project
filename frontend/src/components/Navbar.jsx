@@ -13,22 +13,20 @@ const currentUser = true;
 const notification = true;
 
 return (
-    <header className='max-w-screen-2xl mx-auto px-4 py-6'>
-        <nav className='flex justify-between items-center '>
-            {/* left side */}
-            <div className='flex items-center md:gap-16 gap-4'>
-                <span className='text-2xl font-bold' >Aviccom</span>
-            {/* search input */} 
+    <header className='w-full py-6 px-5'>
+        <nav className='flex justify-between'>
+            <div className='flex items-center lg:gap-16 gap-2 '>
+                <span className='text-5xl font-bold' >Aviccom</span>
                 <div className='relative sm:w-72 w-40 space-x-2'>
                     <FaSearch className='absolute inline-block left-2 inset-y-2 size-6'/>
                     <input type='text' placeholder='  search here' 
-                    className='bg-[#ebeef0] py-1 md:px-8 px-6 rounded-md
-                    focus:outline-none size-10 text-2xl w-full'
+                    className='bg-[#ebeef0]  px-6 rounded-md
+                    focus:outline-dotted size-10 text-2xl lg:w-[500px] w-full'
                     />
                 </div>
             </div>
-            {/* right side */}
-            <div className='relative flex space-x-5 top-3'>
+
+            <div className='flex space-x-5 top-9 right-6 fixed'>
                 <Link to = "/">
                     <FaSignOutAlt className='size-8 text-white bg-black  p-1 rounded-2xl'/>
                 </Link>
