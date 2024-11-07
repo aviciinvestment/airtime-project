@@ -13,9 +13,9 @@ export default {
         'Favorite': '#FF5841'
       },
       backgroundImage: {
-        'hero-pattern': "url('glo.jpeg')",
+        'hero-pattern': "url('assets/glo.jpeg')",
         'footer-texture': "url('assets/blue1.jpeg')",
-        'more-pattern': "url('airtel.jpeg')"
+        'more-pattern': "url('assets/airtel.jpeg')"
       }
     },
   },

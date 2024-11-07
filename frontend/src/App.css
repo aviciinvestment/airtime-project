@@ -1,0 +1,6 @@
+.hero-pattern{
+    background-image:var(--hero-pattern);
+}
+.more-pattern{
+    background-image:var(--more-pattern);
+}
