@@ -10,10 +10,10 @@ import avatarImg from "../assets/user.png";
 
 const Navbar = () => {
 const currentUser = true;
-const notification = true;
+
 
 return (
-    <header className='w-full py-6 px-5'>
+    <header className='w-full py-6 pl-8'>
         <nav className='flex justify-between'>
             <div className='flex items-center lg:gap-16 gap-2 '>
                 <span className='text-5xl font-bold' >Aviccom</span>
@@ -26,7 +26,7 @@ return (
                 </div>
             </div>
 
-            <div className='flex space-x-5 top-9 right-6 fixed'>
+            <div className='flex space-x-5 top-14 right-0'>
                 <Link to = "/">
                     <FaSignOutAlt className='size-8 text-white bg-black  p-1 rounded-2xl'/>
                 </Link>
@@ -38,13 +38,8 @@ return (
                 <div className='flex'>
                     
                     <Link to = "/">
-                        <IoNotifications className='size-8 relative '/> 
+                        <IoNotifications className='size-8'/> 
                     </Link> 
-                    <div>{ notification ?
-                            <div className='bg-red-700 rounded-full p-2 h-1 w-1 absolute z-10 right-16 text-xs'></div>
-                            : ''
-                         }
-                    </div>
                 </div>
                 <div>
                     {

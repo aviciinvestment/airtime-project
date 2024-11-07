@@ -13,10 +13,10 @@ export default {
         'Favorite': '#FF5841'
       },
       backgroundImage: {
-        'hero-pattern': "url('assets/glo.jpeg')",
-        'footer-texture': "url('assets/blue1.jpeg')",
-        'more-pattern': "url('assets/airtel.jpeg')"
-      }
+        'hero-pattern': "url('assets/blue1.jpeg')",
+        'more-pattern': "url('assets/airtel.jpeg')",
+        'footer-texture': "url('assets/all.jpeg')",
+      },
     },
   },
   plugins: [],
